@@ -81,16 +81,18 @@ nav {
 
 .brand-mark {
   align-items: center;
-  aspect-ratio: 1;
   background: var(--gold);
   border-radius: 999px;
   color: var(--ink);
   display: inline-flex;
-  font-family: var(--display);
-  font-size: 14px;
-  font-weight: 800;
   justify-content: center;
-  width: 42px;
+  padding: 8px 14px;
+}
+
+.brand-logo {
+  display: block;
+  height: 26px;
+  width: auto;
 }
 
 .brand span:last-child,
