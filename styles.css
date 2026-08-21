@@ -75,28 +75,26 @@ nav {
 }
 
 .brand {
-  gap: 15px;
-  padding: 7px 20px 7px 7px;
+  gap: 14px;
+  padding: 8px 20px 8px 18px;
   text-decoration: none;
 }
 
 .brand-mark {
   align-items: center;
-  background: var(--gold);
-  border-radius: 999px;
-  color: var(--ink);
+  color: var(--gold);
   display: inline-flex;
-  justify-content: center;
-  /* Optical, not geometric, centering: tighter on the left because the
-     emblem's diagonal base leaves air there, and a touch more room below
-     so the base doesn't crowd the pill's bottom curve. */
-  padding: 10px 18px 12px 14px;
 }
 
 .brand-logo {
   display: block;
-  height: 23px;
+  height: 27px;
   width: auto;
+}
+
+.brand span:last-child {
+  border-left: 1px solid var(--pale-line);
+  padding-left: 14px;
 }
 
 .brand span:last-child,
@@ -106,7 +104,7 @@ nav a {
 }
 
 nav {
-  padding: 13px 18px;
+  padding: 14px 20px;
 }
 
 nav a {
