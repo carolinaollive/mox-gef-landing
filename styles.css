@@ -272,7 +272,12 @@ p {
   text-decoration: none;
 }
 
-.primary-action {
+/* a.primary-action, not .primary-action: when this stylesheet gets ported
+   into a scoped/CSS-module build, the bare `a { color: inherit }` rule above
+   gains a scope class and would outrank a lone class selector, turning the
+   label vellum-on-vellum (invisible). The type+class selector keeps this
+   rule winning under any uniform scoping. */
+a.primary-action {
   align-items: center;
   background: var(--vellum);
   border-radius: 999px;
