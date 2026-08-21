@@ -76,7 +76,7 @@ nav {
 
 .brand {
   gap: 14px;
-  padding: 8px 20px 8px 16px;
+  padding: 10px 20px;
   text-decoration: none;
 }
 
@@ -86,24 +86,25 @@ nav {
   display: inline-flex;
 }
 
+/* Wordmark only in the header: the full emblem's fine linework doesn't
+   survive navbar sizes, so the lockup reduces to the wordmark here. */
 .brand-logo {
   display: block;
-  height: 27px;
-  /* Optical alignment: the logo's box centers geometrically, but its
-     visual weight (the wordmark) hangs at the bottom while the emblem's
-     thin tip tops the box. Lift it so the wordmark sits on the same
-     visual band as the label; the tapered tip can run closer to the
-     pill's top edge without reading as tight. */
-  transform: translateY(-4.5px);
+  height: 23px;
   width: auto;
 }
 
 .brand span:last-child {
   border-left: 1px solid var(--pale-line);
-  padding-left: 14px;
+  color: rgba(255, 250, 242, 0.85);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  padding-left: 15px;
+  text-transform: uppercase;
 }
 
-.brand span:last-child,
 nav a {
   font-size: 13px;
   font-weight: 750;
