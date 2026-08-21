@@ -76,7 +76,7 @@ nav {
 
 .brand {
   gap: 14px;
-  padding: 8px 20px 8px 18px;
+  padding: 8px 20px 8px 16px;
   text-decoration: none;
 }
 
@@ -89,6 +89,12 @@ nav {
 .brand-logo {
   display: block;
   height: 27px;
+  /* Optical alignment: the logo's box centers geometrically, but its
+     visual weight (the wordmark) hangs at the bottom while the emblem's
+     thin tip tops the box. Lift it so the wordmark sits on the same
+     visual band as the label; the tapered tip can run closer to the
+     pill's top edge without reading as tight. */
+  transform: translateY(-4.5px);
   width: auto;
 }
 
